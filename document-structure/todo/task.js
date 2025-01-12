@@ -11,14 +11,6 @@ const taskWrite = function (){
 </div>`
 }
 
-taskInput.addEventListener("keydown", (e)=> {
-    if (e.key === "Enter" && taskInput.value !== ""){
-        e.preventDefault();
-        taskList.innerHTML += taskWrite();
-        taskInput.value = "";
-    }
-});
-
 taskAdd.addEventListener("click", (e)=> {
     e.preventDefault();
     if (taskInput.value !== "") {
